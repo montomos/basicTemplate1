@@ -1,0 +1,30 @@
+{
+  "generator-rff": {
+    "name": "basicTemplate01",
+    "markup": "jade",
+    "style": "stylus",
+    "script": "js",
+    "utilities": [
+      "autoprefixer"
+    ],
+    "testing": [
+      "csslint",
+      "jshint",
+      "jscs"
+    ],
+    "server": [],
+    "libraries": [
+      "modernizr"
+    ],
+    "optimization": [
+      "htmlmin",
+      "cssmin",
+      "uglify",
+      "svgo",
+      "rev"
+    ],
+    "distribution": [
+      "buildcontrol"
+    ]
+  }
+}

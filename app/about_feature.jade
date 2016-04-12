@@ -1,0 +1,51 @@
+include _head
+<body id="about">
+.wrapper
+  include _globalnav
+  .container.marketing
+    .top-buffer-m
+      include _breadcrumbs
+    .jumbotron
+      h1 About CPIP
+      p Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more.
+
+    .row
+      .page-header
+         h1 About CPIP
+          small subtext for header
+        p.lead Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more.
+
+    nav.col-lg-3
+      ul#sidebar.nav.nav-stacked.fixed
+        li
+          a(href="#groupAsub1") Sub Group1
+        li
+          a(href="#groupAsub2") Sub Group2
+        li
+          a(href="#groupBsub1") Sub Group1
+        li
+          a(href="#groupBsub2") Sub Group2
+        li
+          a(href="#groupCsub1") Sub Group1
+        li
+          a(href="#groupCsub2") Sub Group2
+
+    .col-lg-9
+      #groupA.group
+      .row
+        .col-md-8
+          h2.slim-ttl 導入のメリット
+          p.lead concrete5とは、ウェブサーバー上で、誰でも簡単で、しかも直感的にホームページの運営管理が出来る、手軽で画期的なCMS（コンテンツ・マネージメント・システム）です。 市販ホームページ作成ソフトの利便さと、サーバー上でコンテンツを管理するCMSの利点を併せ持っています。
+        .col-md-4
+          img(src="img/bg_img1.jpg" width="100%")
+      #groupB.group
+      .row
+        .col-md-12
+          h2.slim-ttl 導入のプロセス
+          p.lead concrete5とは、ウェブサーバー上で、誰でも簡単で、しかも直感的にホームページの運営管理が出来る、手軽で画期的なCMS（コンテンツ・マネージメント・システム）です。 市販ホームページ作成ソフトの利便さと、サーバー上でコンテンツを管理するCMSの利点を併せ持っています。
+          img(src="img/img_process.png" width="100%")
+
+
+    include _iconani
+
+  include _footer

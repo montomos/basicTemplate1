@@ -1,0 +1,47 @@
+.fullwide
+  #myCarousel.carousel.slide(data-ride="carousel")
+    ol.carousel-indicators
+      li(data-target="#myCarousel" data-slide-to="0" class="active")
+      li(data-target="#myCarousel" data-slide-to="1")
+      li(data-target="#myCarousel" data-slide-to="2")
+    .carousel-inner(role="listbox")
+      .item
+        span.filter
+        img(src="img/bg_img1.jpg" alt="First slide")
+        .container
+          .carousel-caption
+            h1 CPIP is an open source content management system
+            p In-context editing for your clients. A flexible framework for your developers.
+            p
+              a.fancybox.youtube.iframe(href="https://www.youtube.com/watch?v=u33g0vlGaPM")
+                i.glyphicon.glyphicon-play-circle
+                img(src="http://i.ytimg.com/vi/MTchMn7MhS0/default.jpg" width="70")
+            p
+              a.btn.btn-lg.btn-primary(href="#" role="button")
+                |Get Started
+      .item.active
+        span.filter
+        img(src="img/bg_img2.jpg" alt="Second slide")
+        .container
+          .carousel-caption
+            h1 Solution
+            p CPIP is an open source content management system
+            p
+              a.btn.btn-lg.btn-primary(href="#" role="button")
+                |Sign up today
+      .item
+        span.filter
+        img(src="img/bg_img3.jpg" alt="Third slide")
+        .container
+          .carousel-caption
+            h1 CPIP for your project
+            p CPIP is an open source content management system
+            p
+              a.btn.btn-lg.btn-primary(href="#" role="button")
+                |Browse gallery
+      a.left.carousel-control(href="#myCarousel" role="button" data-slide="prev")
+        span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+        span.sr-only Previous
+      a.right.carousel-control(href="#myCarousel" role="button" data-slide="next")
+        span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+        span.sr-only Next

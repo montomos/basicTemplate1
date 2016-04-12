@@ -1,0 +1,655 @@
+// bower:styl
+// endbower
+@import 'nib'
+@import "_carousel"
+@import "_nav"
+
+base-green = #00c090
+base-gray = #BABABA
+light-gray = #CDCDCD
+super-light-gray = #eeeeee
+dark-gray = #333333
+link-blue = #0042bf
+dark-blue = #23527c
+
+html
+  background: gradient(linear,left top,left bottom,from(#fff),to(#ececec))fixed
+
+body
+  font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN',
+ Meiryo, sans-serif
+  line-height: 1.7
+  padding:0
+  word-break: break-all
+  transition: transform 0.6s ease-in-out
+
+h1,h2,h3,h4,h5,h6,.base-ttl
+  font-size: 26px
+  font-weight: 400
+  line-height: 1.1
+  margin: 20px 0 10px 0
+  padding: 4px 0
+
+.subinfo
+    margin-bottom: 10px
+
+.page-header
+  margin: 20px 0
+  border-bottom: 1px solid light-gray
+
+.slim-ttl
+  font-size: 22px
+  line-height: 1.25
+  margin: 0 0 10px 0
+  padding: 4px 0
+
+.hrani
+  text-align: center
+  padding: 15px 0
+  span
+    font-size: 36px
+    padding: 0 15px
+    color: #eee
+
+.top-buffer-l
+  margin-top: 120px
+.top-buffer-m
+  margin-top: 90px
+.bottom-buffer-10
+  margin-bottom: 10px
+
+.container
+  padding: 0
+  .jumbotron
+    background-color: transparent
+    border-radius: none
+    padding: 15px 60px
+    border: 1px solid light-gray
+    border-width: 1px 0
+    margin: 0 0 40px 0
+
+  .btn
+    color: #ffffff !important
+    background-color: base-green !important
+    border-color: base-green !important
+    border-radius: 60px !important
+    &:hover
+      color: base-green!important
+      background-color: #ffffff !important
+      border-color: base-green !important
+      transform: scale(1.1)
+      transition: all .5s ease
+
+  .btn-lg
+    padding: 10px 20px
+
+  .btn-default
+    padding: 5px 15px
+
+.function-content,
+.faq-content
+  margin: 20px 0
+  label
+    display: block
+    font-size: 1.5em
+    font-weight: normal
+    margin-bottom: 1em
+    padding-bottom: .25em
+    border: 3px solid base-green
+    border-width: 0 0 3px 0
+  .faq
+    dt
+      font-size: 1.5em
+      margin-bottom: .5em
+      &:before
+        content: 'Q. '
+        color: base-green
+    dd
+      margin-bottom: 2em
+      margin-left: 2em
+
+.function-content
+  dl
+    clear: left
+    padding: 0 0 1em 0
+    margin-bottom: 1em
+    border-bottom: 1px solid light-gray
+    min-height: 4em
+    dt
+      float: left
+      width: 20%
+      margin-right: 5%
+    dd
+      width: 75%
+      margin-left: 25%
+
+
+.mincho
+  font-family: "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝", serif;
+
+a
+  color: link-blue
+  text-decoration: none
+  &:hover
+    color: dark-blue
+    text-decoration: underline
+  &:active
+    font-weight: 400
+
+.nopadding
+  padding: 0 !important
+  margin: 0 !important
+
+.wrapper
+  position: relative
+//breadcrumb
+.breadcrumb
+  background: transparent
+  margin: 10px 0
+  a, a:hover, a:link, a:visited
+    color: #8D8E8D
+  .active
+    a, a:hover, a:link, a:visited
+      color: dark-gray
+
+.col-6-box
+  display: block
+  text-align: center
+  height: 200px
+  overflow: hidden
+  img
+    width: 100%
+  .col-6-box-title
+    font-size: 20px
+    padding: 5px 0 10px 0
+
+.carousel
+  .carousel-control,
+    &:link,
+    &:hover,
+    &:focus,
+    &:visited
+      color: #ffffff
+
+//global navigation
+.nav
+  padding-right: 30px
+  li
+    a
+      padding: 10px 15px
+      font-size: 14px
+      line-height: 30px
+      text-transform: uppercase
+
+//side nav
+.sidenav-wrapper
+  h1
+    font-size: 1.25em
+    border-bottom: base-gray 1px solid
+.nav
+  li
+    &:hover
+      background-color: light-gray
+      border-left: 3px solid base-green
+    &:active
+      background-color: base-gray
+    &.active
+      border-left: 3px solid base-green
+      color: base-green
+    a
+      color: dark-gray
+      padding: 5px 15px
+
+.row
+  margin:0 -15px 40px -15px
+
+.fullbanner
+  background-color: #454351
+  position: relative
+  color: #ffffff
+  padding: 10px 20px
+  .btn-info
+    background-color: #ff9511
+    position: absolute
+    right: 20px
+    bottom: 25%
+    color: #ffffff
+    box-sizing: border-box
+    &:hover
+    &:visited
+      color: #ffffff
+
+.steps
+  [class^="col-"],
+  [class*=" col-"]
+      background-color: #eeeeee
+      min-height: 400px
+      position: relative
+    .ttl-number
+      font-size: 3em
+    .base-ttl
+      &:before
+        content: '1'
+        position: absolute
+        left: 50%
+        top: 50%
+        font-size: 6em
+        font-style: italic
+        color: #cccccc
+    span
+      display: block
+      font-size: 2em
+
+.crop-s
+  height: 180px
+  overflow: hidden
+
+//large image background
+.large-img-3,
+.large-img-4,
+.large-img-6
+  a
+    background-size: cover
+    background-position: 35% 0px
+    box-sizing: border-box
+    display: block
+    height: 100%
+    position: relative
+    height: 300px
+    overflow: hidden
+    .headline
+      background-color: rgba(0,0,0,0.6)
+      color: #ffffff
+      position: absolute
+      height: 42%
+      overflow: hidden
+      bottom: 0
+      left: 0
+      padding: 10px
+      width: 100%
+      transition: background .3s ease
+      .h3
+        height: 2.15em
+        overflow: hidden
+        margin-top: 5px
+      &.top
+        top:0
+      .lead
+        height: 2.5em
+        line-height: 1.3 !important
+        overflow: hidden
+      &:hover
+        background-color: rgba(0,0,0,0.8)
+
+.carousel-container
+  position: relative
+  width: 100%
+  .owl-carousel
+    position: relative
+    background-color: #000000
+    margin-bottom: 30px
+    height: 350px
+    overflow: hidden
+    .item
+      position: relative
+      img
+        display: block
+        width: 100%
+        height: auto
+      .filter
+        display: block
+        width: 100%
+        height: 100%
+        position: absolute
+        top:0
+        left:0
+        background: url(../img/pattern.png)
+        transition-duration: 1200ms
+      .carousel-caption
+        width: 72%
+        top: 10%
+        left: 14% !important
+        max-height: 300px
+        text-align: left
+        h1
+          font-size: 32px
+          font-weight: bold
+          line-height: 1.5
+          margin-bottom: .5em
+        p
+          font-size: 20px
+          line-height: 1.5
+        .btn-primary
+          position: absolute
+          right: 0%
+          bottom: 18%
+
+  .owl-controls
+    position: absolute
+    left: 5%
+    bottom: 50%
+    width: 90%
+    text-align: center
+    .owl-buttons
+      position: relative
+      width: 100%;
+      font-size: 2em
+      .prev
+        left: 0
+      .next
+        right: 0
+      a
+        color: rgba(255,255,255,0.6)
+        width: 2em
+        position: absolute
+        //z-index: 7
+        &:hover
+          color: #ffffff
+
+.video-include
+  position: absolute
+  width: 100%
+  top: 13%
+  left: 13%
+  z-index: 30
+  max-height: 350px
+  .caption
+    width: 55%
+    margin-left: 20%
+    color: #ffffff
+    h1
+      font-size: 28px
+      font-weight: bold
+      line-height: 1.5
+      margin: 0.25em 0
+    p
+      font-size: 20px
+      line-height: 1.5
+  .video-box
+    width: 50%
+    a
+      curser: pointer
+      position: absolute
+      display: block
+      width: 200px
+      height: 168px
+      opacity: 80%
+      z-index: 20
+      img
+        filter: grayscale(80%)
+      &:hover
+        img
+          filter: grayscale(0%)
+        .glyphicon
+         opacity: 0.8
+      .glyphicon
+        display: block
+        position: absolute
+        top: 37%
+        left: 37%
+        font-size: 4em
+        color: base-green
+
+.fullwide
+  width: 100%
+
+//News
+.news
+  ul
+    li
+      margin: 1em 0
+  .col-md-3
+    text-align: right
+    margin-top: 1em
+  .date
+    margin: 0 10px 0 0
+
+@media only screen and (min-width: 768px)
+  .carousel-caption
+    position: absolute
+    top: 20%
+    right: 20%
+    left: 20%
+    padding-bottom: 30px
+    p
+      font-size: 1.2em
+  .navbar-wrapper
+    margin-top: 10px
+
+//rotate animation
+@keyframes spin {
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+#onecolumn
+  .navbar-wrapper
+    position: absolute
+
+.navbar-wrapper
+  position: relative
+  .row
+    margin: 0 -15px 0
+  .navbar-inverse
+    border-color: #8E8E8E
+  .navbar
+    margin-bottom: 0
+    border-radius 50px
+    padding: 0 15px
+    position: relative
+    //Logo
+    .navbar-brand
+      font-size: 2em
+      padding-left: 40px
+      color: #ffffff
+      transition: opacity 0.2s ease
+      position: relative
+      &:hover
+        opacity: 0.6
+      .icon-brand
+        position: absolute
+        top: 5px
+        left: -5px
+        width: 40px
+        height: 40px
+        content: url(../img/icon_brand.svg) no-repeat
+        animation: spin 10s linear infinite
+    &.scroll
+      background: #3f4c6b
+      opacity: 0.7
+      transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000)
+    .navbar-right
+      margin-right:0
+    .navbar-nav
+      .active
+        a
+          border-bottom: 3px solid base-green
+      .dropdown-menu
+        a
+          border-bottom: none
+    .navbar-nav
+      li
+        .dropdown-menu
+          background-color: rgba(0,0,0,0.899)
+          li
+            a
+              color: #ffffff
+              &:hover
+                background-color: base-green
+
+  //search
+  .search
+    position: relative
+    .search-box
+      position: absolute
+      top: 0
+      right: -35px
+      .search-container
+        display: inline-block
+        border-radius: 18px
+        background: #000000
+        width: 37px
+        height: 35px
+        position: relative
+        transition: width 0.4s ease-in-out
+        backface-visibility: hidden
+        &.active
+          width: 320px
+          border: 1px solid #00C090
+          .glyphicon-remove-sign
+              opacity: 1
+          .search-input
+            width: 200px
+        .glyphicon-search
+          color: base-green
+          font-size: 20px
+          position: absolute
+          top: 7px
+          left: 8px
+          cursor: pointer
+        .glyphicon-remove-sign
+          opacity: 0
+          color: #d9d9d9
+          font-size: 20px
+          position: absolute
+          top: 7px
+          right: 9px
+          transition: opacity 0.4s ease-out
+          cursor: pointer
+        .search-input
+          position: absolute
+          color: #ffffff
+          cursor: default
+          left: 30px
+          top: 0
+          width: 0
+          padding: 5px
+          border: none
+          outline: none
+          font-size: 16px
+          line-height: 18px
+          background-color: rgba(255, 255, 255, 0)
+          transition: width 0.4s ease-out
+
+
+//marketing lead
+.lead
+    font-size: 16px
+    text-align: left
+    line-height: 1.7 !important
+    &.buffer-bottom-m
+      margin-bottom: 40px
+
+//2column menu scroll spy
+.nav-stacked
+  .group
+      height: 500px
+      .subgroup
+        height: 200px
+
+//table
+.table
+  border: 1px solid light-gray
+  tbody
+    tr
+      &:nth-of-type(1)
+        th:nth-of-type(1)
+          border-top: base-green solid 3px
+        td
+          &:nth-of-type(1)
+            border-top: base-gray solid 3px
+      th
+        background-color: super-light-gray
+        width: 20%
+        border-right: 1px solid light-gray
+
+//Footer
+.footer
+  width: 100%
+  padding: 80px 0 40px 0
+  margin: 80px 0 0 0
+  background: #000000
+  color: #eeeeee
+  .container
+    position: relative
+    span
+      color: #ffffff
+    .backtotop
+      position: absolute
+      right: 0
+      top: -40px
+      color: #ffffff
+      transition: all 1s ease
+      &:hover
+        transform: rotate(270deg)
+        color: base-green
+    .glyphicon
+      font-size:5em
+      transform:rotate(-90deg)
+      opacity:0.4
+      &:hover,
+      &:focus
+        text-decoration: none
+
+@media (max-width: 767px)
+  h1, h2, h3, h4, h5, h6, .base-ttl
+    font-size: 30px
+  .jumbotron p
+    font-size: 14px
+  .navbar-wrapper
+    .navbar
+      border-radius: 0 !important
+  .carousel-container
+    .owl-carousel
+      height: 300px
+        top: 30%
+      .item
+        height: 300px
+        img
+          min-height: 100%
+          width: 100%
+        .container
+          .carousel-caption
+            top: 25%
+            max-height: 230px
+            h1
+              font-size: 20px
+              margin-bottom: 0
+            p
+              font-size: 12px
+            .btn-primary
+              bottom: 20%
+            .btn-lg
+              padding: 5px 10px
+              font-size: 16px
+    //if this item has video
+    .video-include
+      min-height: 250px
+      top: 22%
+      .video-box
+        top: 40%
+        a
+          margin-top: 30%
+          width: 150px
+          height: auto
+          .glyphicon
+            font-size: 2.5em
+            top: 40%
+            left: 40%
+      .caption
+        margin: 0 0 0 5%
+        width: 50%
+        h1
+          font-size: 19px
+          font-weight: normal
+        p
+          font-size: 14px
+        .btn-primary
+          zoom: 0.8
+
+
+@media(min-width:992px)
+  .col-md-4
+    img
+      min-width: 200px

@@ -1,0 +1,79 @@
+include _head2
+<body>
+include _globalnav2
+
+.container
+  include _breadcrumbs
+  .jumbotron.text-center
+    h1 concrete5の機能一覧
+    p concrete5が搭載しているページ構成用のブロックの機能を紹介します。
+  .row
+    .col-md-9
+      .row
+        .col-md-12
+          .base-ttl.page-header タイトルタイトルタイトル
+          .function-content
+            label
+              | 記事の投稿
+            dl
+              dt スライドショー
+              dd
+                | 任意の画像数枚をJavascriptのスライドショーで表示できます。画像それぞれに、次の画像表示までの間隔、フェード時間、順番の設定ができます。
+            dl
+              dt WYSIWYG Editor
+              dd WYSIWYGエディタは、ユーザーが記事を書くときにフォントサイズを大きくしたり、見出しや色を変更したり、といったことがボタン一つで簡単に操作できる便利な機能です。html/CSS等に詳しくないユーザーも安心して入力することができます。
+            dl
+              dt 画像の掲載
+              dd
+                a
+                  |ブラウザの投稿画面から画像の投稿ができます。
+            dl
+              dt Question
+              dd Answer
+        .col-md-12
+          .faq-content
+            label
+              | concrete5について
+            dl.faq
+              dt Question
+              dd Answer
+              dt Question
+              dd Answer
+              dt Question
+              dd Answer
+              dt Question
+              dd Answer
+        .col-md-12
+          .faq-content
+            label
+              | RFFについて
+            dl.faq
+              dt Question
+              dd Answer
+              dt Question
+              dd Answer
+              dt Question
+              dd Answer
+              dt Question
+              dd Answer
+
+    .col-md-3
+      .sidenav-wrapper
+        h1 導入事例
+        ul.sidenav.nav
+          li.active
+            a(href="#") Menu1
+          li
+            a(href="#") Menu1
+          li
+            a(href="#") Menu1
+          li
+            a(href="#") Menu1
+          li
+            a(href="#") Menu1
+          li
+            a(href="#") Menu1
+
+
+include _footer2
+
