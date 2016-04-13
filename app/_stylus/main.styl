@@ -36,7 +36,13 @@ h1,h2,h3,h4,h5,h6,.base-ttl
 .page-header
   margin: 20px 0
   border-bottom: 1px solid light-gray
-
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6
+    padding: 0 .5em
 .slim-ttl
   font-size: 22px
   line-height: 1.25
@@ -59,14 +65,14 @@ h1,h2,h3,h4,h5,h6,.base-ttl
   margin-bottom: 10px
 
 .container
-  padding: 0
   .jumbotron
     background-color: transparent
     border-radius: none
-    padding: 15px 60px
-    border: 1px solid light-gray
-    border-width: 1px 0
+    padding: 10px 0
+    border-bottom: 1px solid light-gray
     margin: 0 0 40px 0
+    h1
+      margin-top: 10px
 
   .btn
     color: #ffffff !important
@@ -89,7 +95,7 @@ h1,h2,h3,h4,h5,h6,.base-ttl
 .function-content,
 .faq-content
   margin: 20px 0
-  label
+  h3
     display: block
     font-size: 1.5em
     font-weight: normal
@@ -145,6 +151,7 @@ a
 //breadcrumb
 .breadcrumb
   background: transparent
+  border-bottom: 1px solid light-gray
   margin: 10px 0
   a, a:hover, a:link, a:visited
     color: #8D8E8D
@@ -436,7 +443,7 @@ a
   .navbar
     margin-bottom: 0
     border-radius 50px
-    padding: 0 15px
+    padding: 0 20px
     position: relative
     //Logo
     .navbar-brand
@@ -449,12 +456,11 @@ a
         opacity: 0.6
       .icon-brand
         position: absolute
-        top: 5px
-        left: -5px
-        width: 40px
-        height: 40px
-        content: url(../img/icon_brand.svg) no-repeat
-        animation: spin 10s linear infinite
+        top: 0
+        left: -.4em
+        width: 50px
+        height: 50px
+        background: url(../img/logo.png) no-repeat 0 0
     &.scroll
       background: #3f4c6b
       opacity: 0.7
