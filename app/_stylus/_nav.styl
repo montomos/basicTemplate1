@@ -1,5 +1,5 @@
 /*Strip the ul of padding and list styling*/
-ul.global-navigation
+.global-navigation
   list-style-type:none
   margin:0
   padding:0
@@ -97,10 +97,11 @@ input[type=checkbox]:checked ~ .global-navigation
       position: static
       display: none
       li
-        border-bottom: 1px solid #eee
+        border-bottom: 1px solid rgba(255,255,255,.2)
+        li
+          border-bottom: 1px solid #ccc
         a
-          height: 50px
-          line-height: 50px
+          padding: 1em
     /*Make all menu links full width*/
     ul
       li
@@ -109,7 +110,7 @@ input[type=checkbox]:checked ~ .global-navigation
           width: 100%
     .show-menu
       display:block
-      border: 1px solid #665959
+      border: 1px solid rgba(0,0,0,.2)
       background-color: transparent
       &:hover
       &:focus
